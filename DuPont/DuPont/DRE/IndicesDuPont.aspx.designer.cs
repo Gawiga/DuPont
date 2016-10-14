@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DuPont
+namespace DuPont.DRE
 {
 
 
-    public partial class DRE
+    public partial class IndicesDuPont
     {
     }
 }
