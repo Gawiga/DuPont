@@ -1,11 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Balanco.aspx.cs" Inherits="DuPont.Balanco" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        .auto-style1 {
-            height: 37px;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br />
@@ -18,7 +13,9 @@
                 <th>ANO</th>
             </tr>
             <tr>
-                <td colspan="4">CIRCULANTE</td>
+                <td colspan="4" class="text-center">
+                    <b>CIRCULANTE</b>
+                </td>
             </tr>
             <tr>
                 <td>Disponível</td>
@@ -38,12 +35,12 @@
                 <td></td>
             </tr>
             <tr>
-                <td class="auto-style1">(-) Duplicatas descontadas
+                <td>(-) Duplicatas descontadas
                 </td>
-                <td class="auto-style1"></td>
-                <td class="auto-style1">Impostos a pagar
+                <td></td>
+                <td>Impostos a pagar
                 </td>
-                <td class="auto-style1"></td>
+                <td></td>
             </tr>
             <tr>
                 <td>Estoques
@@ -54,7 +51,8 @@
                 <td></td>
             </tr>
             <tr>
-                <td colspan="4">NÃO CIRCULANTE
+                <td colspan="4" class="text-center">
+                    <b>NÃO CIRCULANTE</b>
                 </td>
             </tr>
             <tr>
@@ -78,13 +76,15 @@
                 <td></td>
             </tr>
             <tr>
-                <td>Total</td>
+                <td>Total RLP</td>
                 <td></td>
-                <td>Total</td>
+                <td>Total RLP</td>
                 <td></td>
             </tr>
             <tr>
-                <td colspan="4">INVESTIMENTOS</td>
+                <td colspan="4" class="text-center">
+                    <b>INVESTIMENTOS</b>
+                </td>
             </tr>
             <tr>
                 <td>Imobilizado</td>
@@ -106,13 +106,17 @@
             <tr>
                 <td>Intangível</td>
                 <td></td>
-                <td>Total</td>
+                <td>Total PL</td>
                 <td></td>
             </tr>
-            <tr>
-                <td>TOTAL</td>
+            <tr class="success">
+                <td>
+                    <b>TOTAL</b>
+                </td>
                 <td></td>
-                <td>TOTAL</td>
+                <td>
+                    <b>TOTAL</b>
+                </td>
                 <td></td>
             </tr>
         </table>
