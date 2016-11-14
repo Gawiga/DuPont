@@ -11,7 +11,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>  z\
+        <div class="container">
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -27,10 +27,11 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Empresa<span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">Balanço Patrimonial</a></li>                            
-                            <li><a href="#">DRE da Empresa</a></li>
-                            <li><a href="#">Índice DuPont</a></li>
+                            <li class="active"><a href="../DRE/Default.aspx">Empresa<span class="sr-only">(current)</span></a></li>
+                            <li><a href="../DRE/Balanco.aspx">Balanço Patrimonial</a></li>                            
+                            <li><a href="../DRE/DREEmpresa.aspx">DRE da Empresa</a></li>
+                            <li><a href="../DRE/IndicesDuPont.aspx">Índice DuPont</a></li>
+                            <li><a href="../DRE/Calculo.aspx">Cálculo</a></li>
                         </ul>
                     </div>
                 </div>

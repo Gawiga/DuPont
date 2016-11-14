@@ -5,14 +5,12 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace DuPont
+namespace DuPont.DRE
 {
-    public partial class Balanco : System.Web.UI.Page
+    public partial class Calculo : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtEmpresa.InnerText = Session["Empresa"].ToString();
-
 
         }
     }

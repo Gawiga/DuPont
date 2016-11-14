@@ -62,6 +62,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="DRE\Calculo.aspx" />
     <Content Include="DRE\Default.aspx" />
     <Content Include="DRE\DREEmpresa.aspx" />
     <Content Include="DRE\IndicesDuPont.aspx" />
@@ -100,6 +101,13 @@
     </Compile>
     <Compile Include="DRE\Balanco.aspx.designer.cs">
       <DependentUpon>Balanco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DRE\Calculo.aspx.cs">
+      <DependentUpon>Calculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DRE\Calculo.aspx.designer.cs">
+      <DependentUpon>Calculo.aspx</DependentUpon>
     </Compile>
     <Compile Include="DRE\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
