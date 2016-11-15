@@ -13,372 +13,552 @@ namespace DuPont {
     public partial class Balanco {
         
         /// <summary>
-        /// txtEmpresa control.
+        /// Empresa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl txtEmpresa;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Empresa;
         
         /// <summary>
-        /// CIRC-Disp-Ano2 control.
+        /// AtivoAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CIRC-Disp-Ano2;
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell AtivoAno2;
         
         /// <summary>
-        /// CIRC-Disp-Ano1 control.
+        /// AtivoAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CIRC-Disp-Ano1;
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell AtivoAno1;
         
         /// <summary>
-        /// CIRC-Forn-Ano2 control.
+        /// PassivoAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CIRC-Forn-Ano2;
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell PassivoAno2;
         
         /// <summary>
-        /// CIRC-Forn-Ano1 control.
+        /// PassivoAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CIRC-Forn-Ano1;
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell PassivoAno1;
         
         /// <summary>
-        /// CIRC-DuplRec-Ano2 control.
+        /// CIRCDispAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CIRC-DuplRec-Ano2;
+        protected global::System.Web.UI.WebControls.TextBox CIRCDispAno2;
         
         /// <summary>
-        /// CIRC-DuplRec-Ano1 control.
+        /// CIRCDispAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CIRC-DuplRec-Ano1;
+        protected global::System.Web.UI.WebControls.TextBox CIRCDispAno1;
         
         /// <summary>
-        /// CIRC-Sal-Ano2 control.
+        /// CIRCFornAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CIRC-Sal-Ano2;
+        protected global::System.Web.UI.WebControls.TextBox CIRCFornAno2;
         
         /// <summary>
-        /// CIRC-Sal-Ano1 control.
+        /// CIRCFornAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CIRC-Sal-Ano1;
+        protected global::System.Web.UI.WebControls.TextBox CIRCFornAno1;
         
         /// <summary>
-        /// CIRC-DuplDesc-Ano2 control.
+        /// CIRCDuplRecAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CIRC-DuplDesc-Ano2;
+        protected global::System.Web.UI.WebControls.TextBox CIRCDuplRecAno2;
         
         /// <summary>
-        /// CIRC-DuplDesc-Ano1 control.
+        /// CIRCDuplRecAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CIRC-DuplDesc-Ano1;
+        protected global::System.Web.UI.WebControls.TextBox CIRCDuplRecAno1;
         
         /// <summary>
-        /// CIRC-Impost-Ano2 control.
+        /// CIRCSalAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CIRC-Impost-Ano2;
+        protected global::System.Web.UI.WebControls.TextBox CIRCSalAno2;
         
         /// <summary>
-        /// CIRC-Impost-Ano1 control.
+        /// CIRCSalAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CIRC-Impost-Ano1;
+        protected global::System.Web.UI.WebControls.TextBox CIRCSalAno1;
         
         /// <summary>
-        /// TextBox4 control.
+        /// CIRCDuplDescAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox CIRCDuplDescAno2;
         
         /// <summary>
-        /// TextBox21 control.
+        /// CIRCDuplDescAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox21;
+        protected global::System.Web.UI.WebControls.TextBox CIRCDuplDescAno1;
         
         /// <summary>
-        /// TextBox5 control.
+        /// CIRCImpostAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.TextBox CIRCImpostAno2;
         
         /// <summary>
-        /// TextBox22 control.
+        /// CIRCImpostAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox22;
+        protected global::System.Web.UI.WebControls.TextBox CIRCImpostAno1;
         
         /// <summary>
-        /// TextBox6 control.
+        /// CIRCEstoquesAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox6;
+        protected global::System.Web.UI.WebControls.TextBox CIRCEstoquesAno2;
         
         /// <summary>
-        /// TextBox23 control.
+        /// CIRCEstoquesAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox23;
+        protected global::System.Web.UI.WebControls.TextBox CIRCEstoquesAno1;
         
         /// <summary>
-        /// TextBox7 control.
+        /// CIRCFinAPagarAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox7;
+        protected global::System.Web.UI.WebControls.TextBox CIRCFinAPagarAno2;
         
         /// <summary>
-        /// TextBox24 control.
+        /// CIRCFinAPagarAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox24;
+        protected global::System.Web.UI.WebControls.TextBox CIRCFinAPagarAno1;
         
         /// <summary>
-        /// TextBox17 control.
+        /// CIRCAOutrosAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox17;
+        protected global::System.Web.UI.WebControls.TextBox CIRCAOutrosAno2;
         
         /// <summary>
-        /// TextBox34 control.
+        /// CIRCAOutrosAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox34;
+        protected global::System.Web.UI.WebControls.TextBox CIRCAOutrosAno1;
         
         /// <summary>
-        /// TextBox8 control.
+        /// CIRCPOutrosAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox8;
+        protected global::System.Web.UI.WebControls.TextBox CIRCPOutrosAno2;
         
         /// <summary>
-        /// TextBox27 control.
+        /// CIRCPOutrosAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox27;
+        protected global::System.Web.UI.WebControls.TextBox CIRCPOutrosAno1;
         
         /// <summary>
-        /// TextBox9 control.
+        /// TotalACAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox9;
+        protected global::System.Web.UI.WebControls.TextBox TotalACAno2;
         
         /// <summary>
-        /// TextBox26 control.
+        /// TotalACAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox26;
+        protected global::System.Web.UI.WebControls.TextBox TotalACAno1;
         
         /// <summary>
-        /// TextBox16 control.
+        /// TotalPCAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox16;
+        protected global::System.Web.UI.WebControls.TextBox TotalPCAno2;
         
         /// <summary>
-        /// TextBox33 control.
+        /// TotalPCAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox33;
+        protected global::System.Web.UI.WebControls.TextBox TotalPCAno1;
         
         /// <summary>
-        /// TextBox10 control.
+        /// NCIRCContasARecAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox10;
+        protected global::System.Web.UI.WebControls.TextBox NCIRCContasARecAno2;
         
         /// <summary>
-        /// TextBox25 control.
+        /// NCIRCContasARecAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox25;
+        protected global::System.Web.UI.WebControls.TextBox NCIRCContasARecAno1;
         
         /// <summary>
-        /// TextBox15 control.
+        /// NCIRCFinLongPrazoAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox15;
+        protected global::System.Web.UI.WebControls.TextBox NCIRCFinLongPrazoAno2;
         
         /// <summary>
-        /// TextBox32 control.
+        /// NCIRCFinLongPrazoAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox32;
+        protected global::System.Web.UI.WebControls.TextBox NCIRCFinLongPrazoAno1;
         
         /// <summary>
-        /// TextBox11 control.
+        /// NCIRCAOutrasContasLongPrazoAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox11;
+        protected global::System.Web.UI.WebControls.TextBox NCIRCAOutrasContasLongPrazoAno2;
         
         /// <summary>
-        /// TextBox28 control.
+        /// NCIRCAOutrasContasLongPrazoAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox28;
+        protected global::System.Web.UI.WebControls.TextBox NCIRCAOutrasContasLongPrazoAno1;
         
         /// <summary>
-        /// TextBox14 control.
+        /// NCIRCPOutrasContasLongPrazoAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox14;
+        protected global::System.Web.UI.WebControls.TextBox NCIRCPOutrasContasLongPrazoAno2;
         
         /// <summary>
-        /// TextBox31 control.
+        /// NCIRCPOutrasContasLongPrazoAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox31;
+        protected global::System.Web.UI.WebControls.TextBox NCIRCPOutrasContasLongPrazoAno1;
         
         /// <summary>
-        /// TextBox12 control.
+        /// NCIRCATotalRLPAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox12;
+        protected global::System.Web.UI.WebControls.TextBox NCIRCATotalRLPAno2;
         
         /// <summary>
-        /// TextBox29 control.
+        /// NCIRCATotalRLPAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox29;
+        protected global::System.Web.UI.WebControls.TextBox NCIRCATotalRLPAno1;
         
         /// <summary>
-        /// TextBox13 control.
+        /// NCIRCPTotalRLPAno2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox13;
+        protected global::System.Web.UI.WebControls.TextBox NCIRCPTotalRLPAno2;
         
         /// <summary>
-        /// TextBox30 control.
+        /// NCIRCPTotalRLPAno1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox30;
+        protected global::System.Web.UI.WebControls.TextBox NCIRCPTotalRLPAno1;
+        
+        /// <summary>
+        /// INVImobilizadoAno2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox INVImobilizadoAno2;
+        
+        /// <summary>
+        /// INVImobilizadoAno1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox INVImobilizadoAno1;
+        
+        /// <summary>
+        /// INVDeprecAcumAno2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox INVDeprecAcumAno2;
+        
+        /// <summary>
+        /// INVDeprecAcumAno1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox INVDeprecAcumAno1;
+        
+        /// <summary>
+        /// INVCapSocialAno2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox INVCapSocialAno2;
+        
+        /// <summary>
+        /// INVCapSocialAno1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox INVCapSocialAno1;
+        
+        /// <summary>
+        /// INVTotalImobAno2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox INVTotalImobAno2;
+        
+        /// <summary>
+        /// INVTotalImobAno1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox INVTotalImobAno1;
+        
+        /// <summary>
+        /// INVLucrosRetAno2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox INVLucrosRetAno2;
+        
+        /// <summary>
+        /// INVLucrosRetAno1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox INVLucrosRetAno1;
+        
+        /// <summary>
+        /// INVIntangivelAno2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox INVIntangivelAno2;
+        
+        /// <summary>
+        /// INVIntangivelAno1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox INVIntangivelAno1;
+        
+        /// <summary>
+        /// INVTotalPLAno2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox INVTotalPLAno2;
+        
+        /// <summary>
+        /// INVTotalPLAno1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox INVTotalPLAno1;
+        
+        /// <summary>
+        /// TOTALATIVOANO2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TOTALATIVOANO2;
+        
+        /// <summary>
+        /// TOTALATIVOANO1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TOTALATIVOANO1;
+        
+        /// <summary>
+        /// TOTALPASSIVOANO2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TOTALPASSIVOANO2;
+        
+        /// <summary>
+        /// TOTALPASSIVOANO1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TOTALPASSIVOANO1;
+        
+        /// <summary>
+        /// Calcular control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Calcular;
+        
+        /// <summary>
+        /// Continuar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Continuar;
     }
 }
