@@ -88,7 +88,7 @@ namespace DuPont
 
         protected void Continuar_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("../DRE/DREEmpresa.aspx", true);
         }
     }
 }

@@ -18,11 +18,11 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:TextBox runat="server" /></td>
+                                <asp:TextBox runat="server" ID="LucroLiqAposIRAno2" /></td>
                             <td>
-                                <asp:TextBox runat="server" /></td>
+                                <asp:TextBox runat="server" ID="LucroLiqAposIRAno1"/></td>
                             <td>
-                                <asp:TextBox runat="server" /></td>
+                                <asp:TextBox runat="server" ID="LucroLiqAposIRAH"/></td>
                         </tr>
                     </table>
                     <table class="table table-bordered table-responsive">
@@ -36,11 +36,11 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:TextBox runat="server" /></td>
+                                <asp:TextBox runat="server" ID="VendasAno2"/></td>
                             <td>
-                                <asp:TextBox runat="server" /></td>
+                                <asp:TextBox runat="server" ID="VendasAno1"/></td>
                             <td>
-                                <asp:TextBox runat="server" /></td>
+                                <asp:TextBox runat="server" ID="VendasAH"/></td>
                         </tr>
                     </table>
                     <table class="table table-bordered table-responsive">

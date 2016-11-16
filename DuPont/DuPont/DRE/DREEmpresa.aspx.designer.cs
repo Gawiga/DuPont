@@ -13,49 +13,40 @@ namespace DuPont {
     public partial class DREEmpresa {
         
         /// <summary>
-        /// lblEmpresa control.
+        /// Empresa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmpresa;
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell Empresa;
         
         /// <summary>
-        /// lblAno1 control.
+        /// Ano2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAno1;
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell Ano2;
         
         /// <summary>
-        /// lblAno2 control.
+        /// Ano1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAno2;
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell Ano1;
         
         /// <summary>
-        /// lblAH control.
+        /// AH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAH;
-        
-        /// <summary>
-        /// txtAno1Receita control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAno1Receita;
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell AH;
         
         /// <summary>
         /// txtAno2Receita control.
@@ -67,6 +58,15 @@ namespace DuPont {
         protected global::System.Web.UI.WebControls.TextBox txtAno2Receita;
         
         /// <summary>
+        /// txtAno1Receita control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAno1Receita;
+        
+        /// <summary>
         /// lblPercReceita control.
         /// </summary>
         /// <remarks>
@@ -74,15 +74,6 @@ namespace DuPont {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPercReceita;
-        
-        /// <summary>
-        /// txtAno1CustoVendas control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAno1CustoVendas;
         
         /// <summary>
         /// txtAno2CustoVendas control.
@@ -94,6 +85,15 @@ namespace DuPont {
         protected global::System.Web.UI.WebControls.TextBox txtAno2CustoVendas;
         
         /// <summary>
+        /// txtAno1CustoVendas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAno1CustoVendas;
+        
+        /// <summary>
         /// lblPercCustoVendas control.
         /// </summary>
         /// <remarks>
@@ -101,15 +101,6 @@ namespace DuPont {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPercCustoVendas;
-        
-        /// <summary>
-        /// txtAno1LucroBruto control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAno1LucroBruto;
         
         /// <summary>
         /// txtAno2LucroBruto control.
@@ -121,6 +112,15 @@ namespace DuPont {
         protected global::System.Web.UI.WebControls.TextBox txtAno2LucroBruto;
         
         /// <summary>
+        /// txtAno1LucroBruto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAno1LucroBruto;
+        
+        /// <summary>
         /// lblPercLucroBruto control.
         /// </summary>
         /// <remarks>
@@ -128,15 +128,6 @@ namespace DuPont {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPercLucroBruto;
-        
-        /// <summary>
-        /// txtAno1DespesasVendas control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAno1DespesasVendas;
         
         /// <summary>
         /// txtAno2DespesasVendas control.
@@ -148,6 +139,15 @@ namespace DuPont {
         protected global::System.Web.UI.WebControls.TextBox txtAno2DespesasVendas;
         
         /// <summary>
+        /// txtAno1DespesasVendas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAno1DespesasVendas;
+        
+        /// <summary>
         /// lblPercDespesasVendas control.
         /// </summary>
         /// <remarks>
@@ -155,15 +155,6 @@ namespace DuPont {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPercDespesasVendas;
-        
-        /// <summary>
-        /// txtAno1DespesasAdministrativas control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAno1DespesasAdministrativas;
         
         /// <summary>
         /// txtAno2DespesasAdministrativas control.
@@ -175,6 +166,15 @@ namespace DuPont {
         protected global::System.Web.UI.WebControls.TextBox txtAno2DespesasAdministrativas;
         
         /// <summary>
+        /// txtAno1DespesasAdministrativas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAno1DespesasAdministrativas;
+        
+        /// <summary>
         /// lblPercDespesasAdministrativas control.
         /// </summary>
         /// <remarks>
@@ -182,15 +182,6 @@ namespace DuPont {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPercDespesasAdministrativas;
-        
-        /// <summary>
-        /// txtAno1DespesasFinanceiras control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAno1DespesasFinanceiras;
         
         /// <summary>
         /// txtAno2DespesasFinanceiras control.
@@ -202,6 +193,15 @@ namespace DuPont {
         protected global::System.Web.UI.WebControls.TextBox txtAno2DespesasFinanceiras;
         
         /// <summary>
+        /// txtAno1DespesasFinanceiras control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAno1DespesasFinanceiras;
+        
+        /// <summary>
         /// lblPercDespesasFinanceiras control.
         /// </summary>
         /// <remarks>
@@ -209,15 +209,6 @@ namespace DuPont {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPercDespesasFinanceiras;
-        
-        /// <summary>
-        /// txtAno1LucroAntImpRenda control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAno1LucroAntImpRenda;
         
         /// <summary>
         /// txtAno2LucroAntImpRenda control.
@@ -229,6 +220,15 @@ namespace DuPont {
         protected global::System.Web.UI.WebControls.TextBox txtAno2LucroAntImpRenda;
         
         /// <summary>
+        /// txtAno1LucroAntImpRenda control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAno1LucroAntImpRenda;
+        
+        /// <summary>
         /// lblPercLucroAntImpRenda control.
         /// </summary>
         /// <remarks>
@@ -236,15 +236,6 @@ namespace DuPont {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPercLucroAntImpRenda;
-        
-        /// <summary>
-        /// txtAno1ImpostoRenda control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAno1ImpostoRenda;
         
         /// <summary>
         /// txtAno2ImpostoRenda control.
@@ -256,6 +247,15 @@ namespace DuPont {
         protected global::System.Web.UI.WebControls.TextBox txtAno2ImpostoRenda;
         
         /// <summary>
+        /// txtAno1ImpostoRenda control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAno1ImpostoRenda;
+        
+        /// <summary>
         /// lblPercImpostoRenda control.
         /// </summary>
         /// <remarks>
@@ -263,15 +263,6 @@ namespace DuPont {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPercImpostoRenda;
-        
-        /// <summary>
-        /// txtAno1LucroLiquido control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAno1LucroLiquido;
         
         /// <summary>
         /// txtAno2LucroLiquido control.
@@ -283,6 +274,15 @@ namespace DuPont {
         protected global::System.Web.UI.WebControls.TextBox txtAno2LucroLiquido;
         
         /// <summary>
+        /// txtAno1LucroLiquido control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAno1LucroLiquido;
+        
+        /// <summary>
         /// lblPercLucroLiquido control.
         /// </summary>
         /// <remarks>
@@ -290,5 +290,23 @@ namespace DuPont {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPercLucroLiquido;
+        
+        /// <summary>
+        /// Calcular control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Calcular;
+        
+        /// <summary>
+        /// Continuar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Continuar;
     }
 }
