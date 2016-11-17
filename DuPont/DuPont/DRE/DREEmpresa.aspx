@@ -1,8 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="DREEmpresa.aspx.cs" Inherits="DuPont.DREEmpresa" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<%--<asp:ScriptManager ID="ScriptManager" runat="server" EnablePartialRendering="true">
+    </asp:ScriptManager>
+    <ajaxToolkit:MaskedEditExtender TargetControlID="txtAno2Receita" Mask="999.999.999,99" runat="server" />--%>
     <div class="jumbotron">
         <table class="table table-responsive table-bordered">
             <tr>
@@ -43,11 +47,11 @@
                     <b>(=) Lucro Bruto</b>
                 </td>
                 <td>
-                    <asp:TextBox ID="txtAno2LucroBruto" runat="server" />
+                    <asp:TextBox ID="txtAno2LucroBruto" runat="server" Enabled="false" />
 
                 </td>
                 <td>
-                    <asp:TextBox ID="txtAno1LucroBruto" runat="server" />
+                    <asp:TextBox ID="txtAno1LucroBruto" runat="server" Enabled="false" />
 
                 </td>
                 <td>
@@ -98,10 +102,10 @@
                     <b>Lucro Antes do Imp. Renda</b>
                 </td>
                 <td>
-                    <asp:TextBox ID="txtAno2LucroAntImpRenda" runat="server" />
+                    <asp:TextBox ID="txtAno2LucroAntImpRenda" runat="server" Enabled="false" />
                 </td>
                 <td>
-                    <asp:TextBox ID="txtAno1LucroAntImpRenda" runat="server" />
+                    <asp:TextBox ID="txtAno1LucroAntImpRenda" runat="server" Enabled="false" />
                 </td>
                 <td>
                     <asp:Label ID="lblPercLucroAntImpRenda" runat="server" />
@@ -125,10 +129,10 @@
                     <b>Lucro Líquido</b>
                 </td>
                 <td>
-                    <asp:TextBox ID="txtAno2LucroLiquido" runat="server" />
+                    <asp:TextBox ID="txtAno2LucroLiquido" runat="server" Enabled="false" />
                 </td>
                 <td>
-                    <asp:TextBox ID="txtAno1LucroLiquido" runat="server" />
+                    <asp:TextBox ID="txtAno1LucroLiquido" runat="server" Enabled="false" />
                 </td>
                 <td>
                     <asp:Label ID="lblPercLucroLiquido" runat="server" />
@@ -136,10 +140,10 @@
             </tr>
             <tr>
                 <td colspan="2" class="text-center">
-                    <asp:Button Id="Calcular" Text="Calcular" CssClass="btn btn-success btn-lg" runat="server" OnClick="Calcular_Click1" />
+                    <asp:Button ID="Calcular" Text="Calcular" CssClass="btn btn-success btn-lg" runat="server" OnClick="Calcular_Click1" />
                 </td>
                 <td colspan="2" class="text-center">
-                    <asp:Button Id="Continuar" Text="Continuar" CssClass="btn btn-primary btn-lg" runat="server" OnClick="Continuar_Click1" />
+                    <asp:Button ID="Continuar" Text="Continuar" CssClass="btn btn-primary btn-lg" runat="server" OnClick="Continuar_Click1" />
                 </td>
             </tr>
         </table>

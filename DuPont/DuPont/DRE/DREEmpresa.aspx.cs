@@ -23,7 +23,21 @@ namespace DuPont
 
             double total = ((v2 - v1) / v1) * 100;
 
-            lblPercReceita.Text = total.ToString("#.##");
+            lblPercReceita.Text = total.ToString("##.##");
+
+            lblPercCustoVendas.Text = (((Convert.ToDouble(txtAno2CustoVendas.Text) - 
+                Convert.ToDouble(txtAno1CustoVendas.Text)) / 
+                Convert.ToDouble(txtAno1CustoVendas.Text)) * 100).ToString("##.##");
+
+            double LucroBruto2 = (Convert.ToDouble(txtAno2Receita.Text) - Convert.ToDouble(txtAno2CustoVendas.Text));
+            txtAno2LucroBruto.Text = LucroBruto2.ToString();
+
+            double LucroBruto1 = (Convert.ToDouble(txtAno1Receita.Text) - Convert.ToDouble(txtAno1CustoVendas.Text));
+            txtAno1LucroBruto.Text = LucroBruto1.ToString();
+
+            lblPercLucroBruto.Text = (((LucroBruto2 - LucroBruto1) / LucroBruto1) * 100).ToString("##.##");
+
+
         }
 
         protected void Continuar_Click1(object sender, EventArgs e)
