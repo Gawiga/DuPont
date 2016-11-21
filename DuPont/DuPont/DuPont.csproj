@@ -101,6 +101,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseWebUI.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="DRE\Balanco.aspx.cs">
       <DependentUpon>Balanco.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -136,6 +139,7 @@
     <Compile Include="DRE\IndicesDuPont.aspx.designer.cs">
       <DependentUpon>IndicesDuPont.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Functions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

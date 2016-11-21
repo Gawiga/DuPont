@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace DuPont.DRE
 {
-    public partial class Calculo : System.Web.UI.Page
+    public partial class Calculo : BaseWebUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {

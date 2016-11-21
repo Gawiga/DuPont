@@ -138,11 +138,11 @@
                     <asp:Label ID="lblPercLucroLiquido" runat="server" />
                 </td>
             </tr>
-            <tr>
-                <td colspan="2" class="text-center">
+            <tr class="text-center">
+                <td colspan="2">
                     <asp:Button ID="Calcular" Text="Calcular" CssClass="btn btn-success btn-lg" runat="server" OnClick="Calcular_Click1" />
                 </td>
-                <td colspan="2" class="text-center">
+                <td colspan="2">
                     <asp:Button ID="Continuar" Text="Continuar" CssClass="btn btn-primary btn-lg" runat="server" OnClick="Continuar_Click1" />
                 </td>
             </tr>

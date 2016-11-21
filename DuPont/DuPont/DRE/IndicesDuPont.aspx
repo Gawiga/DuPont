@@ -14,7 +14,7 @@
             </tr>
             <tr>
                 <td>Capital Circulante Líquido</td>
-                <td>AC - PC
+                <td>Ativo Circulante - Passivo Circulante
                 </td>
                 <td>
                     <asp:TextBox runat="server" ID="CapitalCirculanteLiqAno2" /></td>
@@ -26,7 +26,7 @@
             <tr>
                 <td>Liquidez Corrente
                 </td>
-                <td>AC/PC
+                <td>Ativo Circulante / Passivo Circulante
                 </td>
                 <td>
                     <asp:TextBox runat="server" ID="LiqCorrenteAno2" /></td>
@@ -38,7 +38,7 @@
             <tr>
                 <td>Liquidez Seca
                 </td>
-                <td>(AC - Estoque)/PC
+                <td>(Ativo Circulante - Estoque) / Passivo Circulante
                 </td>
                 <td>
                     <asp:TextBox runat="server" ID="LiqSecaAno2" /></td>
@@ -74,7 +74,7 @@
             <tr>
                 <td>Perc. Médio Cobrança
                 </td>
-                <td>Dupl. Receber/Vendas Médias Diárias
+                <td>Dupl. Receber / Vendas Médias Diárias
                 </td>
                 <td>
                     <asp:TextBox runat="server" ID="PercMedioCobrAno2" /></td>
@@ -86,7 +86,7 @@
             <tr>
                 <td>Perc. Médio Pagamento
                 </td>
-                <td>Dupl. Paga/Compra Médias Diárias
+                <td>Dupl. Paga / Compra Médias Diárias
                 </td>
                 <td>
                     <asp:TextBox runat="server" ID="PercMedioPgtoAno2" /></td>
@@ -98,7 +98,7 @@
             <tr>
                 <td>Giro Ativo Imobilizado
                 </td>
-                <td>Vendas (*)/Ativo Imobilizado
+                <td>Vendas (*) / Ativo Imobilizado
                 </td>
                 <td>
                     <asp:TextBox runat="server" ID="GiroAtivoImobAno2" /></td>
@@ -106,6 +106,23 @@
                     <asp:TextBox runat="server" ID="GiroAtivoImobAno1" /></td>
                 <td>
                     <asp:TextBox runat="server" ID="GiroAtivoImobAH" /></td>
+            </tr>
+            <tr>
+                <td colspan="5" class="text-center">
+                    <strong>Outras formulas</strong><br />
+                    Vendas médias diárias = vendas / 360 <br />
+                    Compras médias diárias = (custo x 70%) / 360 <br />
+                    (Obs. Utilizado 70% de custos apenas para fins didáticos)<br />
+                    (*) Receita líquida de vendas
+                </td>
+            </tr>
+            <tr class="text-center">
+                <td colspan="2">
+                    <asp:Button CssClass="btn btn-success btn-lg" Text="Calcular" ID="Calcular" runat="server" OnClick="Calcular_Click" />
+                </td>
+                <td colspan="3">
+                    <asp:Button CssClass="btn btn-primary btn-lg" Text="Continuar" ID="Continuar" runat="server" OnClick="Continuar_Click" />
+                </td>
             </tr>
         </table>
     </div>

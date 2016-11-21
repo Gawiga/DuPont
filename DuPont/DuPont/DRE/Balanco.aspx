@@ -54,7 +54,7 @@
                 </td>
             </tr>
             <tr>
-                <td>() Duplicatas descontadas
+                <td>(-) Duplicatas descontadas
                 </td>
                 <td>
                     <asp:TextBox runat="server" ID="CIRCDuplDescAno2" TextMode="Number">0</asp:TextBox>
@@ -259,7 +259,7 @@
                     <asp:Button Text="Calcular" CssClass="btn btn-success btn-lg" runat="server" ID="Calcular" OnClick="Calcular_Click" />
                 </td>
                 <td colspan="3" class="text-center">
-                    <asp:Button Text="Continuar" CssClass="btn btn-primary btn-lg" runat="server" ID="Continuar" OnClick="Continuar_Click" />
+                    <asp:Button Text="Continuar" CssClass="btn btn-primary btn-lg" runat="server" ID="Continuar" OnClick="Continuar_Click" Enabled="false"/>
                 </td>
             </tr>
         </table>

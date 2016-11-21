@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace DuPont
 {
-    public partial class DREEmpresa : System.Web.UI.Page
+    public partial class DREEmpresa : BaseWebUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {

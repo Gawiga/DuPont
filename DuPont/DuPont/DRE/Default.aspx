@@ -15,6 +15,6 @@
         Ano 2
         <asp:TextBox ID="txtAno2" CssClass="form-control" runat="server" placeholder="2016" />
         <br />
-        <asp:Button ID="btnEnviar" CssClass="btn btn-default" Text="Começar" runat="server" OnClick="btnEnviar_Click" />
+        <asp:Button ID="btnEnviar" CssClass="btn btn-success" Text="Começar" runat="server" OnClick="btnEnviar_Click" />
     </div>
 </asp:Content>

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace DuPont
 {
-    public partial class Balanco : System.Web.UI.Page
+    public partial class Balanco : BaseWebUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,7 +16,6 @@ namespace DuPont
             AtivoAno2.InnerText = Session["Ano2"].ToString();
             PassivoAno1.InnerText = Session["Ano1"].ToString();
             PassivoAno2.InnerText = Session["Ano2"].ToString();
-
         }
 
         protected void Calcular_Click(object sender, EventArgs e)
@@ -84,10 +83,24 @@ namespace DuPont
             TOTALPASSIVOANO1.Text = (Convert.ToInt32(TotalPCAno1.Text) +
                 Convert.ToInt32(NCIRCPTotalRLPAno1.Text) +
                 Convert.ToInt32(INVTotalPLAno1.Text)).ToString();
+
+            Calcular.Enabled = true;
         }
 
         protected void Continuar_Click(object sender, EventArgs e)
         {
+            Session["TotalACAno1"] = TotalACAno1.Text;
+            Session["TotalACAno2"] = TotalACAno2.Text;
+            Session["EstoqueAno1"] = CIRCEstoquesAno1.Text;
+            Session["EstoqueAno2"] = CIRCEstoquesAno2.Text;
+            Session["DuplicatasReceberAno1"] = CIRCDuplRecAno1.Text;
+            Session["DuplicatasReceberAno2"] = CIRCDuplRecAno2.Text;
+
+            //Session["TotalPCAno1"] = TotalPCAno1.Text;
+            //Session["TotalPCAno2"] = TotalPCAno2.Text;
+            //Session["AtivoImobilizadoAno1"] = INVTotalImobAno1.Text;
+            //Session["AtivoImobilizadoAno2"] = INVTotalImobAno2.Text;
+            
             Response.Redirect("../DRE/DREEmpresa.aspx", true);
         }
     }
