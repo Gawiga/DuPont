@@ -140,10 +140,10 @@
             </tr>
             <tr class="text-center">
                 <td colspan="2">
-                    <asp:Button ID="Calcular" Text="Calcular" CssClass="btn btn-success btn-lg" runat="server" OnClick="Calcular_Click1" />
+                    <asp:Button ID="Calcular" Text="Calcular" CssClass="btn btn-success btn-lg btn-block" runat="server" OnClick="Calcular_Click1" />
                 </td>
                 <td colspan="2">
-                    <asp:Button ID="Continuar" Text="Continuar" CssClass="btn btn-primary btn-lg" runat="server" OnClick="Continuar_Click1" />
+                    <asp:Button ID="Continuar" Text="Continuar" CssClass="btn btn-primary btn-lg btn-block" runat="server" OnClick="Continuar_Click1" />
                 </td>
             </tr>
         </table>
