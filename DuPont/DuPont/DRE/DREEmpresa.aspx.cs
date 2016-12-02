@@ -85,6 +85,8 @@ namespace DuPont
 
         protected void Continuar_Click1(object sender, EventArgs e)
         {
+            Session["CustoAno2"] = txtAno2CustoVendas.Text;
+            Session["CustoAno1"] = txtAno1CustoVendas.Text;
 
         }
 

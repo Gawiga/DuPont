@@ -10,7 +10,8 @@ namespace DuPont
     {
 
     }
-    public static class Extensions
+
+    public static class Ext
     {
         public static double ToDouble(this object o)
         {

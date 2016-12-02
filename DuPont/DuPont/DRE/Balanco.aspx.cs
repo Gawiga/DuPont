@@ -20,6 +20,8 @@ namespace DuPont
 
         protected void Calcular_Click(object sender, EventArgs e)
         {
+            TratarCampos();
+
             TotalACAno2.Text = (Convert.ToInt32(CIRCDispAno2.Text) + 
                 Convert.ToInt32(CIRCDuplRecAno2.Text) - 
                 Convert.ToInt32(CIRCDuplDescAno2.Text) + 
@@ -84,7 +86,7 @@ namespace DuPont
                 Convert.ToInt32(NCIRCPTotalRLPAno1.Text) +
                 Convert.ToInt32(INVTotalPLAno1.Text)).ToString();
 
-            Calcular.Enabled = true;
+            Continuar.Enabled = true;
         }
 
         protected void Continuar_Click(object sender, EventArgs e)
@@ -102,6 +104,14 @@ namespace DuPont
             //Session["AtivoImobilizadoAno2"] = INVTotalImobAno2.Text;
             
             Response.Redirect("../DRE/DREEmpresa.aspx", true);
+        }
+
+        private void TratarCampos()
+        {
+            if (String.IsNullOrEmpty(CIRCDispAno2.Text))
+            {
+                MessageBox("Preencha todos os campos");
+            }
         }
     }
 }

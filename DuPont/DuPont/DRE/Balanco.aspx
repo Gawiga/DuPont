@@ -26,7 +26,7 @@
                         <asp:TextBox runat="server" ID="CIRCDispAno2" TextMode="Number">0</asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="CIRCDispAno1" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="CIRCDispAno1" TextMode="Number" required="true">0</asp:TextBox>
                     </td>
                     <td>Fornecedores</td>
                     <td>
