@@ -22,10 +22,10 @@ namespace DuPont
         {
             TratarCampos();
 
-            TotalACAno2.Text = (Convert.ToInt32(CIRCDispAno2.Text) + 
-                Convert.ToInt32(CIRCDuplRecAno2.Text) - 
-                Convert.ToInt32(CIRCDuplDescAno2.Text) + 
-                Convert.ToInt32(CIRCEstoquesAno2.Text) + 
+            TotalACAno2.Text = (Convert.ToInt32(CIRCDispAno2.Text) +
+                Convert.ToInt32(CIRCDuplRecAno2.Text) -
+                Convert.ToInt32(CIRCDuplDescAno2.Text) +
+                Convert.ToInt32(CIRCEstoquesAno2.Text) +
                 Convert.ToInt32(CIRCAOutrosAno2.Text)).ToString();
 
             TotalACAno1.Text = (Convert.ToInt32(CIRCDispAno1.Text) +
@@ -40,8 +40,8 @@ namespace DuPont
                 Convert.ToInt32(CIRCFinAPagarAno2.Text) +
                 Convert.ToInt32(CIRCAOutrosAno2.Text)).ToString();
 
-            TotalPCAno1.Text = (Convert.ToInt32(CIRCFornAno1.Text) + 
-                Convert.ToInt32(CIRCSalAno1.Text) + 
+            TotalPCAno1.Text = (Convert.ToInt32(CIRCFornAno1.Text) +
+                Convert.ToInt32(CIRCSalAno1.Text) +
                 Convert.ToInt32(CIRCImpostAno1.Text) +
                 Convert.ToInt32(CIRCFinAPagarAno1.Text) +
                 Convert.ToInt32(CIRCAOutrosAno1.Text)).ToString();
@@ -70,7 +70,7 @@ namespace DuPont
             INVTotalPLAno1.Text = (Convert.ToInt32(INVCapSocialAno1.Text) +
                 Convert.ToInt32(INVLucrosRetAno1.Text)).ToString();
 
-            TOTALATIVOANO2.Text = (Convert.ToInt32(TotalACAno2.Text) + 
+            TOTALATIVOANO2.Text = (Convert.ToInt32(TotalACAno2.Text) +
                 Convert.ToInt32(NCIRCATotalRLPAno2.Text) +
                 Convert.ToInt32(INVTotalImobAno2.Text)).ToString();
 
@@ -93,17 +93,18 @@ namespace DuPont
         {
             Session["TotalACAno1"] = TotalACAno1.Text;
             Session["TotalACAno2"] = TotalACAno2.Text;
+            Session["TotalPCAno1"] = TotalPCAno1.Text;
+            Session["TotalPCAno2"] = TotalPCAno2.Text;
             Session["EstoqueAno1"] = CIRCEstoquesAno1.Text;
             Session["EstoqueAno2"] = CIRCEstoquesAno2.Text;
             Session["DuplicatasReceberAno1"] = CIRCDuplRecAno1.Text;
             Session["DuplicatasReceberAno2"] = CIRCDuplRecAno2.Text;
-
-            //Session["TotalPCAno1"] = TotalPCAno1.Text;
-            //Session["TotalPCAno2"] = TotalPCAno2.Text;
-            //Session["AtivoImobilizadoAno1"] = INVTotalImobAno1.Text;
-            //Session["AtivoImobilizadoAno2"] = INVTotalImobAno2.Text;
+            Session["DuplicataSPagarAno2"] = Session["TotalPCAno2"];
+            Session["DuplicataSPagarAno1"] = Session["TotalPCAno1"];
+            Session["AtivoImobilizadoAno1"] = INVTotalImobAno1.Text;
+            Session["AtivoImobilizadoAno2"] = INVTotalImobAno2.Text;
             
-            Response.Redirect("../DRE/DREEmpresa.aspx", true);
+            Response.Redirect("../DRE/2DREEmpresa.aspx", true);
         }
 
         private void TratarCampos()

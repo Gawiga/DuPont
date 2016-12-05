@@ -61,15 +61,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DRE\Balanco.aspx" />
+    <Content Include="DRE\1Balanco.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="DRE\Calculo.aspx" />
-    <Content Include="DRE\Default.aspx" />
-    <Content Include="DRE\DREEmpresa.aspx" />
-    <Content Include="DRE\IndicesDuPont.aspx" />
+    <Content Include="DRE\4Calculo.aspx" />
+    <Content Include="DRE\0Default.aspx" />
+    <Content Include="DRE\2DREEmpresa.aspx" />
+    <Content Include="DRE\3IndicesDuPont.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="MasterPage.Master" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -104,40 +104,40 @@
     <Compile Include="BaseWebUI.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DRE\Balanco.aspx.cs">
-      <DependentUpon>Balanco.aspx</DependentUpon>
+    <Compile Include="DRE\1Balanco.aspx.cs">
+      <DependentUpon>1Balanco.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DRE\Balanco.aspx.designer.cs">
-      <DependentUpon>Balanco.aspx</DependentUpon>
+    <Compile Include="DRE\1Balanco.aspx.designer.cs">
+      <DependentUpon>1Balanco.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DRE\Calculo.aspx.cs">
-      <DependentUpon>Calculo.aspx</DependentUpon>
+    <Compile Include="DRE\4Calculo.aspx.cs">
+      <DependentUpon>4Calculo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DRE\Calculo.aspx.designer.cs">
-      <DependentUpon>Calculo.aspx</DependentUpon>
+    <Compile Include="DRE\4Calculo.aspx.designer.cs">
+      <DependentUpon>4Calculo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DRE\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="DRE\0Default.aspx.cs">
+      <DependentUpon>0Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DRE\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="DRE\0Default.aspx.designer.cs">
+      <DependentUpon>0Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DRE\DREEmpresa.aspx.cs">
-      <DependentUpon>DREEmpresa.aspx</DependentUpon>
+    <Compile Include="DRE\2DREEmpresa.aspx.cs">
+      <DependentUpon>2DREEmpresa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DRE\DREEmpresa.aspx.designer.cs">
-      <DependentUpon>DREEmpresa.aspx</DependentUpon>
+    <Compile Include="DRE\2DREEmpresa.aspx.designer.cs">
+      <DependentUpon>2DREEmpresa.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DRE\IndicesDuPont.aspx.cs">
-      <DependentUpon>IndicesDuPont.aspx</DependentUpon>
+    <Compile Include="DRE\3IndicesDuPont.aspx.cs">
+      <DependentUpon>3IndicesDuPont.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DRE\IndicesDuPont.aspx.designer.cs">
-      <DependentUpon>IndicesDuPont.aspx</DependentUpon>
+    <Compile Include="DRE\3IndicesDuPont.aspx.designer.cs">
+      <DependentUpon>3IndicesDuPont.aspx</DependentUpon>
     </Compile>
     <Compile Include="Functions.cs" />
     <Compile Include="Global.asax.cs">

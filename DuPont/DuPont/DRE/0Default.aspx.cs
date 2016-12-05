@@ -35,7 +35,7 @@ namespace DuPont.DRE
             Session["Ano1"] = txtAno1.Text;
             Session["Ano2"] = txtAno2.Text;
 
-            Response.Redirect("../DRE/Balanco.aspx", true);
+            Response.Redirect("../DRE/1Balanco.aspx", true);
         }
     }
 }

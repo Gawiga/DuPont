@@ -27,11 +27,11 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="../DRE/Default.aspx">Empresa<span class="sr-only">(current)</span></a></li>
-                            <li><a href="../DRE/Balanco.aspx">Balanço Patrimonial</a></li>                            
-                            <li><a href="../DRE/DREEmpresa.aspx">DRE da Empresa</a></li>
-                            <li><a href="../DRE/IndicesDuPont.aspx">Índice DuPont</a></li>
-                            <li><a href="../DRE/Calculo.aspx">Cálculo</a></li>
+                            <li class="active"><a href="../DRE/0Default.aspx">Empresa<span class="sr-only">(current)</span></a></li>
+                            <li><a href="../DRE/1Balanco.aspx">Balanço Patrimonial</a></li>                            
+                            <li><a href="../DRE/2DREEmpresa.aspx">DRE da Empresa</a></li>
+                            <li><a href="../DRE/3IndicesDuPont.aspx">Índice DuPont</a></li>
+                            <li><a href="../DRE/4Calculo.aspx">Cálculo</a></li>
                         </ul>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="DREEmpresa.aspx.cs" Inherits="DuPont.DREEmpresa" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="2DREEmpresa.aspx.cs" Inherits="DuPont.DREEmpresa" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
@@ -143,7 +143,7 @@
                     <asp:Button ID="Calcular" Text="Calcular" CssClass="btn btn-success btn-lg btn-block" runat="server" OnClick="Calcular_Click1" />
                 </td>
                 <td colspan="2">
-                    <asp:Button ID="Continuar" Text="Continuar" CssClass="btn btn-primary btn-lg btn-block" runat="server" OnClick="Continuar_Click1" />
+                    <asp:Button ID="Continuar" Text="Continuar" CssClass="btn btn-primary btn-lg btn-block" runat="server" OnClick="Continuar_Click1" Enabled="false"/>
                 </td>
             </tr>
         </table>

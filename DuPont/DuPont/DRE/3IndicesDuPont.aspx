@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="IndicesDuPont.aspx.cs" Inherits="DuPont.DRE.IndicesDuPont" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="3IndicesDuPont.aspx.cs" Inherits="DuPont.DRE.IndicesDuPont" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -118,10 +118,10 @@
             </tr>
             <tr class="text-center">
                 <td colspan="2">
-                    <asp:Button CssClass="btn btn-success btn-lg" Text="Calcular" ID="Calcular" runat="server" OnClick="Calcular_Click" />
+                    <asp:Button CssClass="btn btn-success btn-lg btn-block" Text="Calcular" ID="Calcular" runat="server" OnClick="Calcular_Click" />
                 </td>
                 <td colspan="3">
-                    <asp:Button CssClass="btn btn-primary btn-lg" Text="Continuar" ID="Continuar" runat="server" OnClick="Continuar_Click" />
+                    <asp:Button CssClass="btn btn-primary btn-lg btn-block" Text="Continuar" ID="Continuar" runat="server" OnClick="Continuar_Click" Enabled="false" />
                 </td>
             </tr>
         </table>

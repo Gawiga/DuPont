@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Balanco.aspx.cs" Inherits="DuPont.Balanco" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="1Balanco.aspx.cs" Inherits="DuPont.Balanco" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -23,35 +23,35 @@
                 <tr>
                     <td>Disponível</td>
                     <td>
-                        <asp:TextBox runat="server" ID="CIRCDispAno2" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="CIRCDispAno2" TextMode="Number">17000</asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="CIRCDispAno1" TextMode="Number" required="true">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="CIRCDispAno1" TextMode="Number" required="true">15000</asp:TextBox>
                     </td>
                     <td>Fornecedores</td>
                     <td>
-                        <asp:TextBox runat="server" ID="CIRCFornAno2" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="CIRCFornAno2" TextMode="Number">9000</asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="CIRCFornAno1" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="CIRCFornAno1" TextMode="Number">5000</asp:TextBox>
                     </td>
                 </tr>
                 <tr>
                     <td>Duplicatas a receber
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="CIRCDuplRecAno2" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="CIRCDuplRecAno2" TextMode="Number">16000</asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="CIRCDuplRecAno1" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="CIRCDuplRecAno1" TextMode="Number">12000</asp:TextBox>
                     </td>
                     <td>Salários e encargos
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="CIRCSalAno2" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="CIRCSalAno2" TextMode="Number">4000</asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="CIRCSalAno1" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="CIRCSalAno1" TextMode="Number">4000</asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -66,28 +66,28 @@
                     <td>Impostos a pagar
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="CIRCImpostAno2" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="CIRCImpostAno2" TextMode="Number">900</asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="CIRCImpostAno1" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="CIRCImpostAno1" TextMode="Number">800</asp:TextBox>
                     </td>
                 </tr>
                 <tr>
                     <td>Estoques
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="CIRCEstoquesAno2" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="CIRCEstoquesAno2" TextMode="Number">14700</asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="CIRCEstoquesAno1" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="CIRCEstoquesAno1" TextMode="Number">13000</asp:TextBox>
                     </td>
                     <td>Financiamentos à pagar
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="CIRCFinAPagarAno2" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="CIRCFinAPagarAno2" TextMode="Number">6000</asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="CIRCFinAPagarAno1" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="CIRCFinAPagarAno1" TextMode="Number">5000</asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -137,18 +137,18 @@
                     <td>Contas à receber a longo prazo
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="NCIRCContasARecAno2" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="NCIRCContasARecAno2" TextMode="Number">2300</asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="NCIRCContasARecAno1" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="NCIRCContasARecAno1" TextMode="Number">1000</asp:TextBox>
                     </td>
                     <td>Financiamentos à longo prazo
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="NCIRCFinLongPrazoAno2" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="NCIRCFinLongPrazoAno2" TextMode="Number">3000</asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="NCIRCFinLongPrazoAno1" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="NCIRCFinLongPrazoAno1" TextMode="Number">4500</asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -187,10 +187,10 @@
                 <tr>
                     <td>Imobilizado</td>
                     <td>
-                        <asp:TextBox runat="server" ID="INVImobilizadoAno2" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="INVImobilizadoAno2" TextMode="Number">14000</asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="INVImobilizadoAno1" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="INVImobilizadoAno1" TextMode="Number">12000</asp:TextBox>
                     </td>
                     <td colspan="3" class="text-center">Patrimonio Líquido
                     </td>
@@ -198,17 +198,17 @@
                 <tr>
                     <td>(-) Depreciação acumulada</td>
                     <td>
-                        <asp:TextBox runat="server" ID="INVDeprecAcumAno2" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="INVDeprecAcumAno2" TextMode="Number">4000</asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="INVDeprecAcumAno1" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="INVDeprecAcumAno1" TextMode="Number">3000</asp:TextBox>
                     </td>
                     <td>Capital social</td>
                     <td>
-                        <asp:TextBox runat="server" ID="INVCapSocialAno2" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="INVCapSocialAno2" TextMode="Number">15000</asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="INVCapSocialAno1" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="INVCapSocialAno1" TextMode="Number">14000</asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -219,10 +219,10 @@
                         <asp:TextBox runat="server" ID="INVTotalImobAno1" Enabled="false" /></td>
                     <td>Lucros retidos</td>
                     <td>
-                        <asp:TextBox runat="server" ID="INVLucrosRetAno2" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="INVLucrosRetAno2" TextMode="Number">22100</asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox runat="server" ID="INVLucrosRetAno1" TextMode="Number">0</asp:TextBox>
+                        <asp:TextBox runat="server" ID="INVLucrosRetAno1" TextMode="Number">16700</asp:TextBox>
                     </td>
                 </tr>
                 <tr>

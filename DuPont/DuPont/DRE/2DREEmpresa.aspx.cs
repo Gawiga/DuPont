@@ -52,44 +52,47 @@ namespace DuPont
 
             lblPercReceita.Text = (((Convert.ToDouble(txtAno2Receita.Text) -
                 Convert.ToDouble(txtAno1Receita.Text)) /
-                Convert.ToDouble(txtAno1Receita.Text)) * 100).ToString("##.##");
+                Convert.ToDouble(txtAno1Receita.Text)) * 100).ToString("00.00");
 
             lblPercCustoVendas.Text = (((Convert.ToDouble(txtAno2CustoVendas.Text) -
                 Convert.ToDouble(txtAno1CustoVendas.Text)) /
-                Convert.ToDouble(txtAno1CustoVendas.Text)) * 100).ToString("##.##");
+                Convert.ToDouble(txtAno1CustoVendas.Text)) * 100).ToString("00.00");
 
-            lblPercLucroBruto.Text = (((LucroBruto2 - LucroBruto1) / LucroBruto1) * 100).ToString("##.##");
+            lblPercLucroBruto.Text = (((LucroBruto2 - LucroBruto1) / LucroBruto1) * 100).ToString("00.00");
 
             lblPercDespesasVendas.Text = (((Convert.ToDouble(txtAno2DespesasVendas.Text) -
                 Convert.ToDouble(txtAno1DespesasVendas.Text)) /
-                Convert.ToDouble(txtAno1DespesasVendas.Text)) * 100).ToString("##.##");
+                Convert.ToDouble(txtAno1DespesasVendas.Text)) * 100).ToString("00.00");
 
             lblPercDespesasAdministrativas.Text = (((Convert.ToDouble(txtAno2DespesasAdministrativas.Text) -
                 Convert.ToDouble(txtAno1DespesasAdministrativas.Text)) /
-                Convert.ToDouble(txtAno1DespesasAdministrativas.Text)) * 100).ToString("##.##");
+                Convert.ToDouble(txtAno1DespesasAdministrativas.Text)) * 100).ToString("00.00");
 
             lblPercDespesasFinanceiras.Text = (((Convert.ToDouble(txtAno2DespesasFinanceiras.Text) -
                 Convert.ToDouble(txtAno1DespesasFinanceiras.Text)) /
-                Convert.ToDouble(txtAno1DespesasFinanceiras.Text)) * 100).ToString("##.##");
+                Convert.ToDouble(txtAno1DespesasFinanceiras.Text)) * 100).ToString("00.00");
 
-            lblPercLucroAntImpRenda.Text = (((LucroAntesImpostoAno2 - LucroAntesImpostoAno1) / LucroAntesImpostoAno1) * 100).ToString("##.##");
+            lblPercLucroAntImpRenda.Text = (((LucroAntesImpostoAno2 - LucroAntesImpostoAno1) / LucroAntesImpostoAno1) * 100).ToString("00.00");
 
             lblPercImpostoRenda.Text = (((Convert.ToDouble(txtAno2ImpostoRenda.Text) -
                 Convert.ToDouble(txtAno1ImpostoRenda.Text)) /
-                Convert.ToDouble(txtAno1ImpostoRenda.Text)) * 100).ToString("##.##");
+                Convert.ToDouble(txtAno1ImpostoRenda.Text)) * 100).ToString("00.00");
 
-            lblPercLucroLiquido.Text = (((LucroLiquidoAno2 - LucroLiquidoAno1) / LucroLiquidoAno1) * 100).ToString("##.##");
+            lblPercLucroLiquido.Text = (((LucroLiquidoAno2 - LucroLiquidoAno1) / LucroLiquidoAno1) * 100).ToString("00.00");
 
             #endregion
+
+            Continuar.Enabled = true;
         }
 
         protected void Continuar_Click1(object sender, EventArgs e)
         {
             Session["CustoAno2"] = txtAno2CustoVendas.Text;
             Session["CustoAno1"] = txtAno1CustoVendas.Text;
+            Session["VendasAno2"] = txtAno2Receita.Text;
+            Session["VendasAno1"] = txtAno1Receita.Text;
 
+            Response.Redirect("../DRE/3IndicesDuPont.aspx", true);
         }
-
-
     }
 }
