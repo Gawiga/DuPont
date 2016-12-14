@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
     <div class="jumbotron">
         <table class="table table-responsive table-bordered">
             <tr>
@@ -110,8 +111,10 @@
             <tr>
                 <td colspan="5" class="text-center">
                     <strong>Outras formulas</strong><br />
-                    Vendas médias diárias = vendas / 360 <br />
-                    Compras médias diárias = (custo x 70%) / 360 <br />
+                    Vendas médias diárias = vendas / 360
+                    <br />
+                    Compras médias diárias = (custo x 70%) / 360
+                    <br />
                     (Obs. Utilizado 70% de custos apenas para fins didáticos)<br />
                     (*) Receita líquida de vendas
                 </td>
