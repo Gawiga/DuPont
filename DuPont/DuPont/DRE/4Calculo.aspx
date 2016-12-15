@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="4Calculo.aspx.cs" Inherits="DuPont.DRE.Calculo" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        function print() {
+            window.print();
+        }
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="jumbotron">
@@ -54,11 +59,11 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="MargemLiquidaAno2" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="MargemLiquidaAno1" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="MargemLiquidaAH" Enabled="False" /></td>
                         </tr>
                     </table>
                     <table class="table table-bordered table-responsive">
@@ -72,11 +77,11 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="ROAAno2" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="ROAAno1" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="ROAAH" Enabled="False" /></td>
                         </tr>
                     </table>
                     <table class="table table-bordered table-responsive">
@@ -90,11 +95,11 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="ROEAno2" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="ROEAno1" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="ROEAH" Enabled="False" /></td>
                         </tr>
                     </table>
                     <table class="table table-bordered table-responsive">
@@ -108,11 +113,11 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="GiroAtivoAno2" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="GiroAtivoAno1" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="GiroAtivoAH" Enabled="False" /></td>
                         </tr>
                     </table>
                     <table class="table table-bordered table-responsive">
@@ -126,11 +131,11 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="TotalAtivoAno2" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="TotalAtivoAno1" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="TotalAtivoAH" Enabled="False" /></td>
                         </tr>
                     </table>
                     <table class="table table-bordered table-responsive">
@@ -144,11 +149,11 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="TotalPassivoAno2" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="TotalPassivoAno1" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="TotalPassivoAH" Enabled="False" /></td>
                         </tr>
                     </table>
                     <table class="table table-bordered table-responsive">
@@ -162,11 +167,11 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="PatrimonioLiqAno2" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="PatrimonioLiqAno1" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="PatrimonioLiqAH" Enabled="False" /></td>
                         </tr>
                     </table>
 
@@ -181,11 +186,11 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="MAFAno2" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="MAFAno1" Enabled="False" /></td>
                             <td>
-                                <asp:TextBox runat="server" Enabled="False" /></td>
+                                <asp:TextBox runat="server" ID="MAFAH" Enabled="False" /></td>
                         </tr>
                     </table>
 
@@ -201,7 +206,7 @@
                             </td>
                         </tr>
                     </table>
-                    <asp:Button CssClass="btn btn-lg btn-block btn-info" Text="Imprimir" runat="server" />
+                    <asp:Button CssClass="btn btn-lg btn-block btn-info" Text="Imprimir" runat="server" ID="Imprimir" OnClientClick="print();"  />
                 </td>
             </tr>
         </table>

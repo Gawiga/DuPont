@@ -92,6 +92,9 @@ namespace DuPont
             Session["VendasAno2"] = txtAno2Receita.Text;
             Session["VendasAno1"] = txtAno1Receita.Text;
 
+            Session["LucroLiquidoAno2"] = txtAno2LucroLiquido.Text;
+            Session["LucroLiquidoAno1"] = txtAno1LucroLiquido.Text;
+
             Response.Redirect("../DRE/3IndicesDuPont.aspx", true);
         }
     }

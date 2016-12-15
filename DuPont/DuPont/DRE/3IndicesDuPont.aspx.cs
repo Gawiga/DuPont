@@ -52,9 +52,8 @@ namespace DuPont.DRE
                 Convert.ToDouble(PercMedioCobrAno1.Text)) /
                 Convert.ToDouble(PercMedioCobrAno1.Text)).ToString("00.00%");
 
-            //refazer
-            PercMedioPgtoAno2.Text = (Ext.ToDouble(Session["TotalPCAno2"]) / ((Ext.ToDouble(Session["CustoAno2"]) * 0.70))).ToString();
-            PercMedioPgtoAno1.Text = (Ext.ToDouble(Session["TotalPCAno1"]) / ((Ext.ToDouble(Session["CustoAno1"]) * 0.70))).ToString();
+            PercMedioPgtoAno2.Text = (Ext.ToDouble(Session["DuplicatasPagarAno2"]) / (((Ext.ToDouble(Session["CustoAno2"]) * 0.70)) / 360D)).ToString();
+            PercMedioPgtoAno1.Text = (Ext.ToDouble(Session["DuplicatasPagarAno1"]) / (((Ext.ToDouble(Session["CustoAno1"]) * 0.70)) / 360D)).ToString();
             PercMedioPgtoAH.Text = ((Convert.ToDouble(PercMedioPgtoAno2.Text) -
                 Convert.ToDouble(PercMedioPgtoAno1.Text)) /
                 Convert.ToDouble(PercMedioPgtoAno1.Text)).ToString("00.00%");

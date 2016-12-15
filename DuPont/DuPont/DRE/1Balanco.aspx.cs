@@ -99,11 +99,18 @@ namespace DuPont
             Session["EstoqueAno2"] = CIRCEstoquesAno2.Text;
             Session["DuplicatasReceberAno1"] = CIRCDuplRecAno1.Text;
             Session["DuplicatasReceberAno2"] = CIRCDuplRecAno2.Text;
-            Session["DuplicatasPagarAno2"] = Session["TotalPCAno2"];
-            Session["DuplicatasPagarAno1"] = Session["TotalPCAno1"];
+            Session["DuplicatasPagarAno2"] = CIRCFornAno2.Text;
+            Session["DuplicatasPagarAno1"] = CIRCFornAno1.Text;
             Session["AtivoImobilizadoAno1"] = INVTotalImobAno1.Text;
             Session["AtivoImobilizadoAno2"] = INVTotalImobAno2.Text;
-            
+
+            Session["TotalAtivoAno2"] = TOTALATIVOANO2.Text;
+            Session["TotalAtivoAno1"] = TOTALATIVOANO1.Text;
+            Session["TotalPassivoAno2"] = TOTALPASSIVOANO2.Text;
+            Session["TotalPassivoAno1"] = TOTALPASSIVOANO1.Text;
+            Session["PatrimonioLiqAno2"] = INVTotalPLAno2.Text;
+            Session["PatrimonioLiqAno1"] = INVTotalPLAno1.Text;
+
             Response.Redirect("../DRE/2DREEmpresa.aspx", true);
         }
 
