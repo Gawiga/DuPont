@@ -283,13 +283,31 @@ namespace DuPont.DRE {
         protected global::System.Web.UI.WebControls.TextBox MAFAH;
         
         /// <summary>
-        /// CheckBoxList1 control.
+        /// CicloCaixa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList CheckBoxList1;
+        protected global::System.Web.UI.WebControls.TextBox CicloCaixa;
+        
+        /// <summary>
+        /// RiscoEmpresa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox RiscoEmpresa;
+        
+        /// <summary>
+        /// Resultado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Resultado;
         
         /// <summary>
         /// Imprimir control.

@@ -12,11 +12,12 @@ namespace DuPont.DRE
         protected void Page_Load(object sender, EventArgs e)
         {
             Calcular();
+            Resultados();
         }
 
         private void Calcular()
         {
-            LucroLiqAposIRAno2.Text = Session["LucroLiquidoAno2"].ToString(); 
+            LucroLiqAposIRAno2.Text = Session["LucroLiquidoAno2"].ToString();
             LucroLiqAposIRAno1.Text = Session["LucroLiquidoAno1"].ToString();
             LucroLiqAposIRAH.Text = ((Convert.ToDouble(LucroLiqAposIRAno2.Text) -
                 Convert.ToDouble(LucroLiqAposIRAno1.Text)) /
@@ -86,6 +87,94 @@ namespace DuPont.DRE
 
         }
 
+        private void Resultados()
+        {
+            if (true)
+            {
+                Resultado.Text += "O estoque da empresa <b>está</b> \"encalhando\". <br />";
+            }
+            else
+            {
+                Resultado.Text += "O estoque da empresa <b>não está</b> \"encalhando\". <br />";
+            }
+
+            if (true)
+            {
+                Resultado.Text += "A margem líquida contribuiu para o <b>aumento</b> do ROE. <br />";
+            }
+            else
+            {
+                Resultado.Text += "A margem líquida contribuiu para a <b>redução</b> do ROE. <br />";
+            }
+
+            if (true)
+            {
+                Resultado.Text += "O MAF contribuiu para o <b>aumento</b> do ROE. <br />";
+            }
+            else
+            {
+                Resultado.Text += "O MAF contribuiu para a <b>redução</b> do ROE. <br />";
+            }
+
+            if (true)
+            {
+                Resultado.Text += "O Giro do Ativo contribuiu para o <b>aumento</b> do ROE. <br />";
+            }
+            else
+            {
+                Resultado.Text += "O Giro do Ativo contribuiu para a <b>redução</b> do ROE. <br />";
+            }
+
+            if (true)
+            {
+                Resultado.Text += "A empresa <b>depende</b> da \"queima do estoque\" <br />";
+                if (true)
+                {
+                    Resultado.Text += "e essa dependência aumentou - reduziu - não se aplica para este caso.";
+                }
+            }
+            else
+            {
+                Resultado.Text += "A empresa <b>não depende</b> da \"queima do estoque\"  <br />";
+            }
+
+            if (true)
+            {
+                Resultado.Text += "A necessidade do capital de giro da empresa <b>aumentou</b>. <br />";
+            }
+            else
+            {
+                Resultado.Text += "A necessidade do capital de giro da empresa <b>diminuiu</b>. <br />";
+            }
+            if (true)
+            {
+                Resultado.Text += "A empresa deve cortar <br />";
+                if (true)
+                {
+                    Resultado.Text += "Custos - Despesa de Vendas - Despesa Administrativas - Despesas Financeiras";
+                }
+            }
+            else
+            {
+                Resultado.Text += "A empresa não precisa realizar cortes <br />";
+            }
+            if (true)
+            {
+                Resultado.Text += "O nível de risco da empresa <b>aumentou</b>. <br />";
+            }
+            else
+            {
+                Resultado.Text += "O nível de risco da empresa <b>diminuiu</b>. <br />";
+            }
+            if (true)
+            {
+                Resultado.Text += "A lucratividade da empresa <b>aumentou</b>. <br />";
+            }
+            else
+            {
+                Resultado.Text += "A lucratividade da empresa <b>diminuiu</b>. <br />";
+            }
+        }
 
     }
 }
