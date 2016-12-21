@@ -111,6 +111,9 @@ namespace DuPont
             Session["PatrimonioLiqAno2"] = INVTotalPLAno2.Text;
             Session["PatrimonioLiqAno1"] = INVTotalPLAno1.Text;
 
+            Session["FinanciamentoLPAno2"] = NCIRCFinLongPrazoAno2.Text;
+            Session["FinanciamentoLPAno1"] = NCIRCFinLongPrazoAno1.Text;
+
             Response.Redirect("../DRE/2DREEmpresa.aspx", true);
         }
 

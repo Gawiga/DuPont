@@ -133,15 +133,21 @@
             <tr>
                 <td>Ciclo de Caixa = IME + PMC - PMP
                 </td>
-                <td colspan="3">
-                    <asp:TextBox runat="server" ID="CicloCaixa" />
+                <td>
+                    <asp:TextBox runat="server" ID="CicloCaixaAno2" />
+                </td>
+                <td>
+                    <asp:TextBox runat="server" ID="CicloCaixaAno1" />
                 </td>
             </tr>
             <tr>
-                <td class="auto-style1">Risco da Empresa = (PC + ELP) / Passivo Total
+                <td>Risco da Empresa = (PC + ELP) / Passivo Total
                 </td>
-                <td colspan="3" class="auto-style1">
-                    <asp:TextBox runat="server" ID="RiscoEmpresa" />
+                <td>
+                    <asp:TextBox runat="server" ID="RiscoEmpresaAno2" />
+                </td>
+                <td>
+                    <asp:TextBox runat="server" ID="RiscoEmpresaAno1" />
                 </td>
             </tr>
             <tr>

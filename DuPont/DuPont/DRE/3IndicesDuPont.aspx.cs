@@ -46,8 +46,8 @@ namespace DuPont.DRE
                 Convert.ToDouble(IdadeMediaEstoqueAno1.Text)) /
                 Convert.ToDouble(IdadeMediaEstoqueAno1.Text)).ToString("00.00%");
 
-            PercMedioCobrAno2.Text = (Ext.ToDouble(Session["DuplicatasReceberAno2"]) / Ext.ToDouble(Session["VendasAno2"])).ToString();
-            PercMedioCobrAno1.Text = (Ext.ToDouble(Session["DuplicatasReceberAno1"]) / Ext.ToDouble(Session["VendasAno1"])).ToString();
+            PercMedioCobrAno2.Text = (Ext.ToDouble(Session["DuplicatasReceberAno2"]) / (Ext.ToDouble(Session["VendasAno2"]) / 360D )).ToString();
+            PercMedioCobrAno1.Text = (Ext.ToDouble(Session["DuplicatasReceberAno1"]) / (Ext.ToDouble(Session["VendasAno1"]) / 360D )).ToString();
             PercMedioCobrAH.Text = ((Convert.ToDouble(PercMedioCobrAno2.Text) -
                 Convert.ToDouble(PercMedioCobrAno1.Text)) /
                 Convert.ToDouble(PercMedioCobrAno1.Text)).ToString("00.00%");
@@ -70,6 +70,13 @@ namespace DuPont.DRE
 
         protected void Continuar_Click(object sender, EventArgs e)
         {
+            Session["IdadeMediaEstoqueAno1"] = IdadeMediaEstoqueAno1.Text;
+            Session["IdadeMediaEstoqueAno2"] = IdadeMediaEstoqueAno2.Text;
+            Session["PercMedioCobrAno1"] = PercMedioCobrAno1.Text;
+            Session["PercMedioCobrAno2"] = PercMedioCobrAno2.Text;
+            Session["PercMedioPgtoAno1"] = PercMedioPgtoAno1.Text;
+            Session["PercMedioPgtoAno2"] = PercMedioPgtoAno2.Text;
+
             Response.Redirect("../DRE/4Calculo.aspx", true);
         }
     }
