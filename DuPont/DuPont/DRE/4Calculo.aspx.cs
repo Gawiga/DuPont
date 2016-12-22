@@ -76,22 +76,30 @@ namespace DuPont.DRE
             ROEAH.Text = ((Convert.ToDouble(ROEAno2.Text) -
                 Convert.ToDouble(ROEAno1.Text)) /
                 Convert.ToDouble(ROEAno1.Text)).ToString("00.00%");
-            
-            CicloCaixaAno2.Text = (Convert.ToDouble(Session["IdadeMediaEstoqueAno2"]) + 
-                Convert.ToDouble(Session["PercMedioCobrAno2"]) - 
+
+            CicloCaixaAno2.Text = (Convert.ToDouble(Session["IdadeMediaEstoqueAno2"]) +
+                Convert.ToDouble(Session["PercMedioCobrAno2"]) -
                 Convert.ToDouble(Session["PercMedioPgtoAno2"])).ToString();
 
-            CicloCaixaAno1.Text = (Convert.ToDouble(Session["IdadeMediaEstoqueAno1"]) + 
-                Convert.ToDouble(Session["PercMedioCobrAno1"]) - 
+            CicloCaixaAno1.Text = (Convert.ToDouble(Session["IdadeMediaEstoqueAno1"]) +
+                Convert.ToDouble(Session["PercMedioCobrAno1"]) -
                 Convert.ToDouble(Session["PercMedioPgtoAno1"])).ToString();
 
-            RiscoEmpresaAno2.Text = (((Convert.ToDouble(Session["TotalPCAno2"]) + 
-                Convert.ToDouble(Session["FinanciamentoLPAno2"])) / 
+            CicloCaixaAH.Text = ((Convert.ToDouble(CicloCaixaAno2.Text) -
+                Convert.ToDouble(CicloCaixaAno1.Text)) /
+                Convert.ToDouble(CicloCaixaAno1.Text)).ToString("00.00%");
+
+            RiscoEmpresaAno2.Text = (((Convert.ToDouble(Session["TotalPCAno2"]) +
+                Convert.ToDouble(Session["FinanciamentoLPAno2"])) /
                 Convert.ToDouble(Session["TotalPassivoAno2"])) * 100).ToString();
 
-            RiscoEmpresaAno1.Text = (((Convert.ToDouble(Session["TotalPCAno1"]) + 
-                Convert.ToDouble(Session["FinanciamentoLPAno1"])) / 
+            RiscoEmpresaAno1.Text = (((Convert.ToDouble(Session["TotalPCAno1"]) +
+                Convert.ToDouble(Session["FinanciamentoLPAno1"])) /
                 Convert.ToDouble(Session["TotalPassivoAno1"])) * 100).ToString();
+
+            RiscoEmpresaAH.Text = ((Convert.ToDouble(RiscoEmpresaAno2.Text) -
+                Convert.ToDouble(RiscoEmpresaAno1.Text)) /
+                Convert.ToDouble(RiscoEmpresaAno1.Text)).ToString("00.00%");
 
             //adiciona o simbolo %
             MargemLiquidaAno2.Text += "%";
@@ -190,6 +198,11 @@ namespace DuPont.DRE
             {
                 Resultado.Text += "A lucratividade da empresa <b>diminuiu</b>. <br />";
             }
+        }
+
+        protected void Imprimir_Click(object sender, EventArgs e)
+        {
+            ClientScript.RegisterStartupScript(this.GetType(), "PrintOperation", "printing()", true);
         }
 
     }

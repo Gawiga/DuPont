@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
-        function print() {
+        function printing() {
             window.print();
         }
     </script>
@@ -134,20 +134,26 @@
                 <td>Ciclo de Caixa = IME + PMC - PMP
                 </td>
                 <td>
-                    <asp:TextBox runat="server" ID="CicloCaixaAno2" />
+                    <asp:TextBox runat="server" ID="CicloCaixaAno2" Enabled="False" />
                 </td>
                 <td>
-                    <asp:TextBox runat="server" ID="CicloCaixaAno1" />
+                    <asp:TextBox runat="server" ID="CicloCaixaAno1" Enabled="False" />
+                </td>
+                <td>
+                    <asp:TextBox runat="server" ID="CicloCaixaAH" Enabled="False" />
                 </td>
             </tr>
             <tr>
                 <td>Risco da Empresa = (PC + ELP) / Passivo Total
                 </td>
                 <td>
-                    <asp:TextBox runat="server" ID="RiscoEmpresaAno2" />
+                    <asp:TextBox runat="server" ID="RiscoEmpresaAno2" Enabled="false" />
                 </td>
                 <td>
-                    <asp:TextBox runat="server" ID="RiscoEmpresaAno1" />
+                    <asp:TextBox runat="server" ID="RiscoEmpresaAno1" Enabled="false" />
+                </td>
+                <td>
+                    <asp:TextBox runat="server" ID="RiscoEmpresaAH" Enabled="False" />
                 </td>
             </tr>
             <tr>
@@ -157,7 +163,7 @@
             </tr>
             <tr>
                 <td colspan="4">
-                    <asp:Button CssClass="btn btn-lg btn-block btn-info" Text="Imprimir" runat="server" ID="Imprimir" OnClientClick="print();" />
+                    <asp:Button CssClass="btn btn-lg btn-block btn-info" Text="Imprimir" runat="server" ID="Imprimir" OnClick="Imprimir_Click" />
                 </td>
             </tr>
         </table>
