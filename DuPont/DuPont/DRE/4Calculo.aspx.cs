@@ -113,16 +113,24 @@ namespace DuPont.DRE
 
         private void Resultados()
         {
-            if (true)
+            if (Convert.ToDouble(GiroAtivoAno2.Text) <= Convert.ToDouble(GiroAtivoAno1.Text))
             {
                 Resultado.Text += "O estoque da empresa <b>está</b> \"encalhando\". <br />";
             }
             else
+            { 
+              Resultado.Text += "O estoque da empresa <b>não está</b> \"encalhando\". <br />";
+            }
+          /* if (IdadeMediaAnoSeg <= IdadeMediaAnoPri)
+            {
+               Resultado.Text += "O estoque da empresa <b>está</b> \"encalhando\". <br />";
+            }
+            else
             {
                 Resultado.Text += "O estoque da empresa <b>não está</b> \"encalhando\". <br />";
-            }
+            }*/
 
-            if (true)
+            if (Convert.ToDouble(MargemLiquidaAH.Text) > 0 )
             {
                 Resultado.Text += "A margem líquida contribuiu para o <b>aumento</b> do ROE. <br />";
             }
@@ -131,7 +139,7 @@ namespace DuPont.DRE
                 Resultado.Text += "A margem líquida contribuiu para a <b>redução</b> do ROE. <br />";
             }
 
-            if (true)
+            if (Convert.ToDouble(MAFAH.Text) > 0)
             {
                 Resultado.Text += "O MAF contribuiu para o <b>aumento</b> do ROE. <br />";
             }
@@ -140,7 +148,7 @@ namespace DuPont.DRE
                 Resultado.Text += "O MAF contribuiu para a <b>redução</b> do ROE. <br />";
             }
 
-            if (true)
+            if (Convert.ToDouble(GiroAtivoAH.Text) >0)
             {
                 Resultado.Text += "O Giro do Ativo contribuiu para o <b>aumento</b> do ROE. <br />";
             }
@@ -149,39 +157,51 @@ namespace DuPont.DRE
                 Resultado.Text += "O Giro do Ativo contribuiu para a <b>redução</b> do ROE. <br />";
             }
 
-            if (true)
+           /* if (LiquidezSeca <= 1)
             {
                 Resultado.Text += "A empresa <b>depende</b> da \"queima do estoque\" <br />";
-                if (true)
+                /*if (LiquidezSecaAno2 <= LiquidezSecaAno1)
                 {
-                    Resultado.Text += "e essa dependência aumentou - reduziu - não se aplica para este caso.";
+                    Resultado.Text += "e essa dependência aumentou";
+                }
+                else
+                {
+                    Resultado.Text += "A dependencia da queima de estoque diminuiu";
                 }
             }
             else
             {
                 Resultado.Text += "A empresa <b>não depende</b> da \"queima do estoque\"  <br />";
-            }
+            }*/
 
-            if (true)
-            {
-                Resultado.Text += "A necessidade do capital de giro da empresa <b>aumentou</b>. <br />";
-            }
-            else
+            if (Convert.ToDouble (CicloCaixaAH.Text) <=0 )
             {
                 Resultado.Text += "A necessidade do capital de giro da empresa <b>diminuiu</b>. <br />";
             }
-            if (true)
+            else
             {
-                Resultado.Text += "A empresa deve cortar <br />";
-                if (true)
+                Resultado.Text += "A necessidade do capital de giro da empresa <b>aumentou</b>. <br />";
+            }
+            /*if (CustoDeVendasAH > ReceitaLiqVendasAH)
+            {
+                Resultado.Text += "A empresa deve cortar custos <br />";
+                if (DespesaVendasAH > ReceitaLiqVendasAH)
                 {
-                    Resultado.Text += "Custos - Despesa de Vendas - Despesa Administrativas - Despesas Financeiras";
+                    Resultado.Text += "A empresa deve cortar custos de<b>VENDAS<b>. <br />";
+                }
+                if (DespesaADMAH > ReceitaLiqVendasAH)
+                {
+                    Resultado.Text += "A empresa deve cortar custos de <b>DESPESAS ADMINISTRATIVAS<b>. <br />";
+                }
+                if (DespesaFINAH > ReceitaLiqVendasAH)
+                {
+                    Resultado.Text += "A empresa deve cortar custos de <b>DESPESAS FINANCEIRAS<b>. <br />";
                 }
             }
             else
             {
                 Resultado.Text += "A empresa não precisa realizar cortes <br />";
-            }
+            }*/
             if (true)
             {
                 Resultado.Text += "O nível de risco da empresa <b>aumentou</b>. <br />";
