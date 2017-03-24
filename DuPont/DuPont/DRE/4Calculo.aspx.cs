@@ -202,7 +202,7 @@ namespace DuPont.DRE
             {
                 Resultado.Text += "A empresa não precisa realizar cortes <br />";
             }*/
-            if (true)
+            if (Convert.ToDouble(RiscoEmpresaAno2.Text) > Convert.ToDouble(RiscoEmpresaAno1.Text))
             {
                 Resultado.Text += "O nível de risco da empresa <b>aumentou</b>. <br />";
             }
@@ -210,7 +210,7 @@ namespace DuPont.DRE
             {
                 Resultado.Text += "O nível de risco da empresa <b>diminuiu</b>. <br />";
             }
-            if (true)
+            if (Convert.ToDouble (MargemLiquidaAH) >0)
             {
                 Resultado.Text += "A lucratividade da empresa <b>aumentou</b>. <br />";
             }
