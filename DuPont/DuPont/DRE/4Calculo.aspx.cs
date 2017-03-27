@@ -183,7 +183,7 @@ namespace DuPont.DRE
                 Resultado.Text += "A necessidade do capital de giro da empresa <b>aumentou</b>. <br />";
             }
             /*if (CustoDeVendasAH > ReceitaLiqVendasAH)
-            {
+            { 
                 Resultado.Text += "A empresa deve cortar custos <br />";
                 if (DespesaVendasAH > ReceitaLiqVendasAH)
                 {
