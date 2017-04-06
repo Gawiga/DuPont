@@ -6,15 +6,22 @@
     <div class="jumbotron">
         <h1>Sistema Dupont</h1>
         <br />
-        Nome da Empresa  
-        <asp:TextBox ID="txtEmpresa" CssClass="form-control" runat="server" placeholder="SILVA LTDA" Text="SILVA LTDA" />
+        E-mail 
+        <asp:TextBox ID="txtEmail" CssClass="form-control" runat="server" placeholder="seunome@provedor.com" required="required" />
+        <br />
+        Senha
+        <asp:TextBox ID="txtSenha" CssClass="form-control" runat="server" placeholder="******" TextMode="Password" required="required"  />
         <br />
         Ano 1
-        <asp:TextBox ID="txtAno1" CssClass="form-control" runat="server" placeholder="2015" Text="2015" />
+        <asp:TextBox ID="txtAno1" CssClass="form-control" runat="server" placeholder="2015" required="required"  />
         <br />
         Ano 2
-        <asp:TextBox ID="txtAno2" CssClass="form-control" runat="server" placeholder="2016" Text="2016"/>
+        <asp:TextBox ID="txtAno2" CssClass="form-control" runat="server" placeholder="2016" required="required" />
         <br />
-        <asp:Button ID="btnEnviar" CssClass="btn btn-success btn-lg btn-block" Text="Começar" runat="server" OnClick="btnEnviar_Click" />
+        <asp:Button ID="btnEnviar" CssClass="btn btn-success btn-lg btn-block" Text="Entrar" runat="server" OnClick="btnEnviar_Click" />
+        <br />
+        <div class="text-center">
+            <a href="cadastro.aspx">Cadastre-se</a>
+        </div>
     </div>
 </asp:Content>

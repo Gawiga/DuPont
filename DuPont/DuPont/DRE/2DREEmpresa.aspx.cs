@@ -89,11 +89,17 @@ namespace DuPont
         {
             Session["CustoAno2"] = txtAno2CustoVendas.Text;
             Session["CustoAno1"] = txtAno1CustoVendas.Text;
+            Session["CustoAH"] = lblPercCustoVendas.Text;
             Session["VendasAno2"] = txtAno2Receita.Text;
             Session["VendasAno1"] = txtAno1Receita.Text;
+            Session["VendasAH"] = lblPercReceita.Text;
 
             Session["LucroLiquidoAno2"] = txtAno2LucroLiquido.Text;
             Session["LucroLiquidoAno1"] = txtAno1LucroLiquido.Text;
+
+            Session["DespesasVendasAH"] = lblPercDespesasVendas.Text;
+            Session["DespesasAdministrativasAH"] = lblPercDespesasAdministrativas.Text;
+            Session["DespesasFinanceirasAH"] = lblPercDespesasFinanceiras.Text;
 
             Response.Redirect("../DRE/3IndicesDuPont.aspx", true);
         }

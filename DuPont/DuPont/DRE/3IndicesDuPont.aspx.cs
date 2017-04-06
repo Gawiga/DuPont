@@ -76,6 +76,9 @@ namespace DuPont.DRE
             Session["PercMedioCobrAno2"] = PercMedioCobrAno2.Text;
             Session["PercMedioPgtoAno1"] = PercMedioPgtoAno1.Text;
             Session["PercMedioPgtoAno2"] = PercMedioPgtoAno2.Text;
+            Session["LiqSecaAno1"] = LiqSecaAno1.Text;
+            Session["LiqSecaAno2"] = LiqSecaAno2.Text;
+            Session["LiqSecaAH"] = LiqSecaAH.Text;
 
             Response.Redirect("../DRE/4Calculo.aspx", true);
         }
