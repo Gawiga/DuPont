@@ -11,9 +11,16 @@ namespace DuPont
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Empresa.InnerText = Session["Empresa"].ToString();
-            Ano1.InnerText = Session["Ano1"].ToString();
-            Ano2.InnerText = Session["Ano2"].ToString();
+            if (String.IsNullOrEmpty(Session["Empresa"].ToString()))
+            {
+                Response.Redirect("../DRE/0Default.aspx");
+            }
+            else
+            {
+                Empresa.InnerText = Session["Empresa"].ToString();
+                Ano1.InnerText = Session["Ano1"].ToString();
+                Ano2.InnerText = Session["Ano2"].ToString();
+            }
         }
 
         protected void Calcular_Click1(object sender, EventArgs e)
@@ -102,6 +109,11 @@ namespace DuPont
             Session["DespesasFinanceirasAH"] = lblPercDespesasFinanceiras.Text;
 
             Response.Redirect("../DRE/3IndicesDuPont.aspx", true);
+        }
+
+        protected void Imprimir_Click(object sender, EventArgs e)
+        {
+            ClientScript.RegisterStartupScript(this.GetType(), "PrintOperation", "printing()", true);
         }
     }
 }

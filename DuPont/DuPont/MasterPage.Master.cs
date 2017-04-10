@@ -16,7 +16,8 @@ namespace DuPont
 
         protected void Sair_Click(object sender, EventArgs e)
         {
-
+            Session["Empresa"] = null;
+            Session.Abandon();
         }
     }
 }

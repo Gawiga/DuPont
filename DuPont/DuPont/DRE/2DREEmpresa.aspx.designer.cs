@@ -13,6 +13,15 @@ namespace DuPont {
     public partial class DREEmpresa {
         
         /// <summary>
+        /// H1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl H1;
+        
+        /// <summary>
         /// Empresa control.
         /// </summary>
         /// <remarks>
@@ -290,6 +299,15 @@ namespace DuPont {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPercLucroLiquido;
+        
+        /// <summary>
+        /// Imprimir control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Imprimir;
         
         /// <summary>
         /// Calcular control.

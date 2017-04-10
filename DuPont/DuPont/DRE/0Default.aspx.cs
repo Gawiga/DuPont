@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,22 +12,37 @@ namespace DuPont.DRE
 {
     public partial class Default : BaseWebUI
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {  //teste
+        Functions f = new Functions();
 
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
         }
 
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
+            string strConexao = ConfigurationManager.ConnectionStrings["Conexao"].ConnectionString;
+            SqlConnection conn = new SqlConnection(strConexao);
+            conn.Open();
 
+            string sql = String.Format("SET NOCOUNT ON; SELECT id, nome, empresa FROM tblCadastro WHERE email = '{0}' AND senha = '{1}'",
+                txtEmail.Text, txtSenha.Text);
 
+            DataTable dt = f.DT(sql);
+            conn.Close();
 
-            //Session["Empresa"] = txtEmpresa.Text;
-            Session["Ano1"] = txtAno1.Text;
-            Session["Ano2"] = txtAno2.Text;
-
-            Response.Redirect("../DRE/1Balanco.aspx", true);
+            if (dt.Rows.Count != 1)
+            {
+                MessageBox("Usuário ou senha inválido!");
+            }
+            else
+            {
+                Session["Nome"] = dt.Rows[0]["nome"].ToString();
+                Session["Empresa"] = dt.Rows[0]["empresa"].ToString();
+                Session["Ano1"] = txtAno1.Text;
+                Session["Ano2"] = txtAno2.Text;
+                Response.Redirect("../DRE/1Balanco.aspx", true);
+            }
         }
     }
 }

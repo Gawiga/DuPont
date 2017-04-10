@@ -13,6 +13,15 @@ namespace DuPont.DRE {
     public partial class IndicesDuPont {
         
         /// <summary>
+        /// Empresa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Empresa;
+        
+        /// <summary>
         /// CapitalCirculanteLiqAno2 control.
         /// </summary>
         /// <remarks>
@@ -229,13 +238,13 @@ namespace DuPont.DRE {
         protected global::System.Web.UI.WebControls.TextBox GiroAtivoImobAH;
         
         /// <summary>
-        /// Calcular control.
+        /// Imprimir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Calcular;
+        protected global::System.Web.UI.WebControls.Button Imprimir;
         
         /// <summary>
         /// Continuar control.

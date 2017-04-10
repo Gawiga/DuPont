@@ -11,7 +11,14 @@ namespace DuPont.DRE
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Calcular_Click(null, null);
+            if (String.IsNullOrEmpty(Session["Empresa"].ToString()))
+            {
+                Response.Redirect("../DRE/0Default.aspx");
+            }
+            else
+            {
+                Calcular_Click(null, null);
+            }
         }
 
         protected void Calcular_Click(object sender, EventArgs e)
@@ -81,6 +88,11 @@ namespace DuPont.DRE
             Session["LiqSecaAH"] = LiqSecaAH.Text;
 
             Response.Redirect("../DRE/4Calculo.aspx", true);
+        }
+
+        protected void Imprimir_Click(object sender, EventArgs e)
+        {
+            ClientScript.RegisterStartupScript(this.GetType(), "PrintOperation", "printing()", true);
         }
     }
 }

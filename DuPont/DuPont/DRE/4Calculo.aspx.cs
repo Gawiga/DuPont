@@ -11,9 +11,17 @@ namespace DuPont.DRE
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Calcular();
-            Resultados();
-            Porcentagens();
+            if (String.IsNullOrEmpty(Session["Empresa"].ToString()))
+            {
+                Response.Redirect("../DRE/0Default.aspx");
+            }
+            else
+            {
+                Calcular();
+                Resultados();
+                Porcentagens();
+            }
+
         }
 
         private void Calcular()
@@ -193,18 +201,18 @@ namespace DuPont.DRE
 
             if (custoAHDouble > vendaAHDouble)
             {
-                Resultado.Text += "A empresa deve cortar custos <br />";
+                Resultado.Text += "A empresa deve cortar custos. <br/>";
                 if (despesaVendasAHDouble > vendaAHDouble)
                 {
-                    Resultado.Text += "A empresa deve cortar custos de<b>VENDAS<b>. <br />";
+                    Resultado.Text += "A empresa deve cortar custos de <b>vendas</b>. <br />";
                 }
                 if (despesaAdminAHDouble > vendaAHDouble)
                 {
-                    Resultado.Text += "A empresa deve cortar custos de <b>DESPESAS ADMINISTRATIVAS<b>. <br />";
+                    Resultado.Text += "A empresa deve cortar custos de <b>despesas administrativas</b>. <br />";
                 }
                 if (despesaFinanceiraAHDouble > vendaAHDouble)
                 {
-                    Resultado.Text += "A empresa deve cortar custos de <b>DESPESAS FINANCEIRAS<b>. <br />";
+                    Resultado.Text += "A empresa deve cortar custos de <b>despesas financeiras</b>. <br />";
                 }
             }
             else
