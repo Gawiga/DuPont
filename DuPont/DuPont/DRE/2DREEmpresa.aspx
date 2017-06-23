@@ -40,10 +40,10 @@
                     <td>(-) Custo das Vendas
                     </td>
                     <td>
-                        <asp:TextBox ID="txtAno2CustoVendas" runat="server" TextMode="Number" required="true">28000</asp:TextBox>
+                        <asp:TextBox ID="txtAno2CustoVendas" runat="server" TextMode="Number" required="true"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtAno1CustoVendas" runat="server" TextMode="Number" required="true">25000</asp:TextBox>
+                        <asp:TextBox ID="txtAno1CustoVendas" runat="server" TextMode="Number" required="true"></asp:TextBox>
                     </td>
                     <td>
                         <asp:Label ID="lblPercCustoVendas" runat="server" />
@@ -69,10 +69,10 @@
                     <td class="auto-style1">(-) Despesas com Vendas
                     </td>
                     <td class="auto-style1">
-                        <asp:TextBox ID="txtAno2DespesasVendas" runat="server" TextMode="Number" required="true">6200</asp:TextBox>
+                        <asp:TextBox ID="txtAno2DespesasVendas" runat="server" TextMode="Number" required="true"></asp:TextBox>
                     </td>
                     <td class="auto-style1">
-                        <asp:TextBox ID="txtAno1DespesasVendas" runat="server" TextMode="Number" required="true">5500</asp:TextBox>
+                        <asp:TextBox ID="txtAno1DespesasVendas" runat="server" TextMode="Number" required="true"></asp:TextBox>
                     </td>
                     <td class="auto-style1">
                         <asp:Label ID="lblPercDespesasVendas" runat="server" />
@@ -82,10 +82,10 @@
                     <td>(-) Despesas Administrativas
                     </td>
                     <td>
-                        <asp:TextBox ID="txtAno2DespesasAdministrativas" runat="server" TextMode="Number" required="true">9000</asp:TextBox>
+                        <asp:TextBox ID="txtAno2DespesasAdministrativas" runat="server" TextMode="Number" required="true"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtAno1DespesasAdministrativas" runat="server" TextMode="Number" required="true">8300</asp:TextBox>
+                        <asp:TextBox ID="txtAno1DespesasAdministrativas" runat="server" TextMode="Number" required="true"></asp:TextBox>
                     </td>
                     <td>
                         <asp:Label ID="lblPercDespesasAdministrativas" runat="server" />
@@ -95,10 +95,10 @@
                     <td>(-) Despesas Financeiras
                     </td>
                     <td>
-                        <asp:TextBox ID="txtAno2DespesasFinanceiras" runat="server" TextMode="Number" required="true">1800</asp:TextBox>
+                        <asp:TextBox ID="txtAno2DespesasFinanceiras" runat="server" TextMode="Number" required="true"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtAno1DespesasFinanceiras" runat="server" TextMode="Number" required="true">1900</asp:TextBox>
+                        <asp:TextBox ID="txtAno1DespesasFinanceiras" runat="server" TextMode="Number" required="true"></asp:TextBox>
                     </td>
                     <td>
                         <asp:Label ID="lblPercDespesasFinanceiras" runat="server" />
@@ -122,10 +122,10 @@
                     <td>Imposto de Renda
                     </td>
                     <td>
-                        <asp:TextBox ID="txtAno2ImpostoRenda" runat="server" TextMode="Number" required="true">8500</asp:TextBox>
+                        <asp:TextBox ID="txtAno2ImpostoRenda" runat="server" TextMode="Number" required="true"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtAno1ImpostoRenda" runat="server" TextMode="Number" required="true">8825</asp:TextBox>
+                        <asp:TextBox ID="txtAno1ImpostoRenda" runat="server" TextMode="Number" required="true"></asp:TextBox>
                     </td>
                     <td>
                         <asp:Label ID="lblPercImpostoRenda" runat="server" />
